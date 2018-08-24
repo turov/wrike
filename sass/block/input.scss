@@ -58,7 +58,18 @@
 }
 
 .input__field--textarea {
-  overflow-y: scroll;
+  overflow-y: auto;
   resize: none;
   height: 144px;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 4px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.32);
+  }
 }
