@@ -1,0 +1,28 @@
+.content {
+  padding: 118px 57px 0 55px;
+  transition: padding 0.3s ease, width 0.3s ease;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.container--active .content {
+  padding: 23px 0 0 55px;
+  width: auto;
+}
+
+.content__bio {
+  font-size: 14px;
+  line-height: 1.6;
+  padding-right: 20px;
+  margin-top: 19px;
+  padding-left: 12px;
+  transition: padding 0.3s ease,
+  width 0.3s ease,
+  margin 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.container--active .content__bio {
+  padding-left: 1px;
+  width: 300px;
+}

@@ -1,0 +1,17 @@
+.footer {
+  width: 100%;
+  height: 56px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16), 0 0 1px 0 rgba(0, 0, 0, 0.16);
+  padding: 15px 17px 0 31px;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.footer__btns-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+}

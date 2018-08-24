@@ -1,0 +1,21 @@
+.heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 72px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16), 0 0 1px 0 rgba(0, 0, 0, 0.16);
+  padding: 18px 19px 22px 31px;
+  flex-shrink: 0;
+}
+
+.heading__title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 600;
+  text-align: left;
+  color: #232323;
+  margin-top: 4px;
+}

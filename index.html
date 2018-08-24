@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Wrike Test</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page">
+
+<button class="btn btn--popup" type="button">Попап</button>
+
+<form class="popup" method="post" action="/">
+
+  <header class="popup__header heading">
+    <h2 class="heading__title">Popup title is here</h2>
+    <button class="btn btn--cross" id="popupClose" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </header>
+
+  <div class="container">
+
+    <div class="content">
+      <div class="user-info">
+        <img class="user-info__avatar" src="img/oval@1x.jpg" srcset="img/oval@2x.jpg 2x" width="130" height="130"
+             alt="аватар пользователя">
+        <p class="user-info__full-name">
+          <b class="user-info__name user-info__name--surname">Иванов</b>
+          <b class="user-info__name user-info__name--name">Иван</b>
+          <b class="user-info__name user-info__name--patronymic">Иванович</b>
+        </p>
+      </div>
+
+      <p class="content__bio">Родился 3 октября (21 сентября по старому стилю) 1895 года в селе Константиново Рязанской
+        губернии в крестьянской семье. Его отец с 12 лет служил в Москве в лавке, бывая в деревне, даже после женитьбы,
+        только наездами.</p>
+
+      <div class="filters">
+        <input class="visually-hidden" type="checkbox" id="terms" name="terms" required>
+        <label class="checkbox-label" for="terms">С условиями согласен</label>
+        <input class="visually-hidden" type="radio" id="accessPublic" name="accessibly" checked>
+        <label class="radio-label" for="accessPublic">Доступно всем</label>
+        <input class="visually-hidden" type="radio" id="accessPrivate" name="accessibly">
+        <label class="radio-label" for="accessPrivate">Только мне</label>
+      </div>
+
+    </div>
+
+    <div class="personal-info">
+
+      <p class="input">
+        <label class="input__label" for="surname">Фамилия</label>
+        <input class="input__field" type="text" id="surname" name="surname" placeholder="Введите фамилию"
+               required>
+        <span class="input__tip">Фамилия на русском языке</span>
+      </p>
+
+      <p class="input">
+        <label class="input__label" for="name">Имя</label>
+        <input class="input__field" type="text" id="name" name="name" placeholder="Введите имя" required>
+        <span class="input__tip">Имя на русском языке</span>
+      </p>
+
+      <p class="input input--invalid">
+        <label class="input__label" for="patronymic">Отчество</label>
+        <input class="input__field" type="text" id="patronymic" name="name" value="+ 7 344 45-34-53" required>
+        <span class="input__tip">Отчество на русском языке</span>
+      </p>
+
+      <p class="input">
+        <label class="input__label" for="bio">Биография</label>
+        <textarea class="input__field input__field--textarea" name="bio" id="bio" placeholder="Напишите биографию"
+                  required></textarea>
+      </p>
+
+    </div>
+
+  </div>
+
+  <footer class="popup__footer footer">
+    <div class="footer__btns-container">
+      <button class="btn btn--edit" type="button">Edit</button>
+      <button class="btn btn--save" type="submit">Save</button>
+    </div>
+  </footer>
+
+</form>
+
+<div class="wrapper"></div>
+
+<script src="js/script.min.js"></script>
+</body>
+</html>

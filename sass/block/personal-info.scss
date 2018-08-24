@@ -1,0 +1,13 @@
+.personal-info {
+  transition: transform 0.3s ease;
+  padding-top: 23px;
+  padding-left: 10px;
+  margin-right: 49px;
+  width: 266px;
+  transform: scale(0);
+  flex-shrink: 0;
+}
+
+.container--active .personal-info {
+  transform: scale(1);
+}
